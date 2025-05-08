@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>dlmtree: Bayesian Treed Distributed Lag Models – Statistical Methods for Precision Environmental Health with Mixture Exposures</title>
+<title>Structured Bayesian Regression Tree Models for Estimating Distributed Lag Effects: The R Package dlmtree – Statistical Methods for Precision Environmental Health with Mixture Exposures</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -103,8 +103,9 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">dlmtree: Bayesian Treed Distributed Lag Models</h1>
+      <h1 class="title">Structured Bayesian Regression Tree Models for Estimating Distributed Lag Effects: The R Package dlmtree</h1>
                                 <div class="quarto-categories">
+                <div class="quarto-category">Software Paper</div>
                 <div class="quarto-category">R Package on CRAN</div>
                 <div class="quarto-category">Software</div>
               </div>
@@ -118,7 +119,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">April 2005</p>
+        <p class="date">May 2005</p>
       </div>
     </div>
     
@@ -137,9 +138,9 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p><strong>Description:</strong> Estimation of distributed lag models (DLMs) based on a Bayesian additive regression trees framework. Includes several extensions of DLMs: treed DLMs and distributed lag mixture models (Mork and Wilson, 2023) <a href="doi:10.1111/biom.13568" class="uri">doi:10.1111/biom.13568</a>; treed distributed lag nonlinear models (Mork and Wilson, 2022) <a href="doi:10.1093/biostatistics/kxaa051" class="uri">doi:10.1093/biostatistics/kxaa051</a>; heterogeneous DLMs (Mork, et. al., 2024) <a href="doi:10.1080/01621459.2023.2258595" class="uri">doi:10.1080/01621459.2023.2258595</a>; monotone DLMs (Mork and Wilson, 2024) <a href="doi:10.1214/23-BA1412" class="uri">doi:10.1214/23-BA1412</a>. The package also includes visualization tools and a ‘shiny’ interface to check model convergence and to help interpret results.</p>
-<p><strong>Citation:</strong> Daniel Mork, Seongwon Im, Ander Wilson (2025). <em>dlmtree: Bayesian Treed Distributed Lag Models</em>. R package version 1.1.0, <a href="https://github.com/danielmork/dlmtree">https://danielmork.github.io/dlmtree/</a>. <a href="http://doi.org/10.32614/CRAN.package.dlmtree">DOI: 10.32614/CRAN.package.dlmtree</a>.</p>
-<p><strong>Software and data sharing:</strong> All software is included in the package. There is no data used in this package.</p>
+<p><strong>Abstract:</strong> When examining the relationship between an exposure and an outcome, there is often a time lag between exposure and the observed effect on the outcome. A common statistical approach for estimating the relationship between the outcome and lagged measurements of exposure is a distributed lag model (DLM). Because repeated measurements are often autocorrelated, the lagged effects are typically constrained to vary smoothly over time. A recent statistical development on the smoothing constraint is a tree structured DLM framework. We present an R package dlmtree, available on CRAN, that integrates tree structured DLM and extensions into a comprehensive software package with user-friendly implementation. A conceptual background on tree structured DLMs and demonstration of the fitting process of each model using simulated data are provided. We also demonstrate inference and interpretation using the fitted models, including summary and visualization. Additionally, a built-in shiny app for heterogeneity analysis is included.</p>
+<p><strong>Citation:</strong> Seongwon Im, Daniel Mork, Ander Wilson (In press). Structured Bayesian Regression Tree Models for Estimating Distributed Lag Effects: The R Package dlmtree. <em>The R Journal</em>. <a href="https://arxiv.org/abs/2504.18452">arXiv:2504.18452</a>.</p>
+<p><strong>Software and data sharing:</strong> All software is included in the paper and supplement. There is no data used in this package. This accompanies the R package <code>dlmtree</code> (<a href="https://github.com/danielmork/dlmtree">https://danielmork.github.io/dlmtree/</a>, <a href="http://doi.org/10.32614/CRAN.package.dlmtree">DOI: 10.32614/CRAN.package.dlmtree</a>).</p>
 
 
 
