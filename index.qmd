@@ -13,5 +13,4 @@ page-layout: full
 title-block-banner: false
 ---
 
-
 This site contains research products from the project "Precision Environmental Health with Mixture Exposures" funded by the National Institute Of Environmental Health Sciences of the National Institutes of Health under Award Number R01ES035735. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health. For questions, please contact [Ander Wilson](http://anderwilson.github.io/).
