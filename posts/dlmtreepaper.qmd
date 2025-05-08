@@ -11,4 +11,4 @@ categories:
 
 **Citation:** Seongwon Im, Daniel Mork, Ander Wilson (In press). Structured Bayesian Regression Tree Models for Estimating Distributed Lag Effects: The R Package dlmtree. _The R Journal_. [arXiv:2504.18452 ](https://arxiv.org/abs/2504.18452).
 
-**Software and data sharing:** All software is included in the paper and supplement. There is no data used in this package. This accompanies the R package `dlmtree` ([https://danielmork.github.io/dlmtree/](https://github.com/danielmork/dlmtree), [DOI: 10.32614/CRAN.package.dlmtree](http://doi.org/10.32614/CRAN.package.dlmtree)). 
+**Software and data sharing:** All software is included in the paper and supplement. There is no data used in this package. This accompanies the R package `dlmtree` ([https://danielmork.github.io/dlmtree/](https://github.com/danielmork/dlmtree), [DOI: 10.32614/CRAN.package.dlmtree](http://doi.org/10.32614/CRAN.package.dlmtree)). The supplement is available at [https://github.com/PrecisionEnvironmentalHealth/dlmtree_paper_supplement_code](https://github.com/PrecisionEnvironmentalHealth/dlmtree_paper_supplement_code).
