@@ -5,6 +5,7 @@ project:
 website:
   title: "Statistical Methods for Precision Environmental Health with Mixture Exposures"
   description: "A website for products from the Precision Environmental Health with Mixture Exposures project."
+  google-analytics: "G-YBPYL6BT35"
   navbar:
     right:
       - icon: github
