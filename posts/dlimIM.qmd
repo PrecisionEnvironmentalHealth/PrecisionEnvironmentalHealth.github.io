@@ -1,6 +1,6 @@
 ---
 title: "Distributed Lag Interaction Model with Index Modification"
-date: 05/05/2005
+date: 05/05/2025
 categories: 
   - Stat Methods Paper
   - Software

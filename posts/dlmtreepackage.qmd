@@ -1,6 +1,6 @@
 ---
 title: "dlmtree: Bayesian Treed Distributed Lag Models"
-date: 04/25/2005
+date: 04/25/2025
 categories: 
   - R Package on CRAN
   - Software

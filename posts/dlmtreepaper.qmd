@@ -1,6 +1,6 @@
 ---
 title: "Structured Bayesian Regression Tree Models for Estimating Distributed Lag Effects: The R Package dlmtree"
-date: 05/08/2005
+date: 05/08/2025
 categories: 
   - Software Paper
   - R Package on CRAN
