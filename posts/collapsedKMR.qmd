@@ -1,0 +1,19 @@
+---
+title: "Collapsible Kernel Machine Regression for Exposomic Analyses"
+date: 09/17/2005
+categories: 
+  - Stat Methods Paper
+---
+
+
+
+**Abstract:** An important goal of environmental epidemiology is to quantify the complex health risks posed by a wide array of environmental exposures. In analyses focusing on a smaller number of exposures within a mixture, flexible models like Bayesian kernel machine regression (BKMR) are appealing because they allow for non-linear and non-additive associations among mixture components. However, this flexibility comes at the cost of low power and difficult interpretation, particularly in exposomic analyses when the number of exposures is large. We propose a flexible framework that allows for separate selection of additive and non-additive effects, unifying additive models and kernel machine regression. The proposed approach yields increased power and simpler interpretation when there is little evidence of interaction. Further, it allows users to specify separate priors for additive and non-additive effects, and allows for tests of non-additive interaction. We extend the approach to the class of multiple index models, in which the special case of kernel machine - distributed lag models are nested. We apply the method to motivating data from a subcohort of the Human Early Life Exposome (HELIX) study containing 65 mixture components grouped into 13 distinct exposure classes.
+
+
+**Citation:** Glen McGee, Brent A. Coull, Ander Wilson (In press). Distributed Lag Interaction Model with Index Modification. _Statistics in Medicine_.  [arXiv:2409.18005](https://arxiv.org/abs/2409.18005). [DOI:10.1002/sim.70258](https://doi.org/10.1002/sim.70258). [PMC12436083](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12436083/).
+
+
+
+
+**Software and data sharing:** All software to reproduce the data analysis and simulation are included in the supplemental material of the paper available through the journal website. The HELIX data are secondary data that are already publicly available without restriction. The data are available at [https://github.com/isglobal-exposomeHub/ExposomeDataChallenge2021]https://github.com/isglobal-exposomeHub/ExposomeDataChallenge2021).
+
