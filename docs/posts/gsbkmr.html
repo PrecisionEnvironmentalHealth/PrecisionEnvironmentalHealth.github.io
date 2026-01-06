@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Statistical Methods for Precision Environmental Health with Mixture Exposures</title>
+<title>Subgroup Analyses and Effect Modification with Bayesian Kernel Machine Regression – Statistical Methods for Precision Environmental Health with Mixture Exposures</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-530bf8e59df25186f8bffdc63bad3503.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-530bf8e59df25186f8bffdc63bad3503.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,35 +66,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-YBPYL6BT35"></script>
 
 <script type="text/javascript">
@@ -107,46 +76,17 @@ gtag('js', new Date());
 gtag('config', 'G-YBPYL6BT35', { 'anonymize_ip': true});
 </script>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Statistical Methods for Precision Environmental Health with Mixture Exposures</span>
     </a>
   </div>
@@ -169,165 +109,51 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Subgroup Analyses and Effect Modification with Bayesian Kernel Machine Regression</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Stat Methods Paper</div>
+                <div class="quarto-category">Software</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">December 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="UiUyMFBhY2thZ2UlMjBvbiUyMENSQU4=">R Package on CRAN <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U29mdHdhcmU=">Software <span class="quarto-category-count">(4)</span></div><div class="category" data-category="U29mdHdhcmUlMjBQYXBlcg==">Software Paper <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3RhdCUyME1ldGhvZHMlMjBQYXBlcg==">Stat Methods Paper <span class="quarto-category-count">(3)</span></div></div></div>
+    
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
-<p>This site contains research products from the project “Statistical Methods for Precision Environmental Health with Mixture Exposures” funded by the National Institute Of Environmental Health Sciences of the National Institutes of Health under Award Number R01ES035735. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health. For questions, please contact <a href="http://anderwilson.github.io/">Ander Wilson</a>.</p>
+
+<p><strong>Abstract:</strong> There is substantial interest in estimating the health effects of exposure to environmental mixtures. Bayesian kernel machine regression (BKMR) has emerged as a popular tool for mixture analyses. The health effects of environmental exposures, including mixture exposures, often differ among subpopulations. However, there is little guidance on how to assess such heterogeneity for mixture effects. We provide tools and guidance to conduct BKMR analyses with effect modification, including estimating group-specific effects and between-group differences in effects. We propose a new group-separable BKMR variant for mixture analyses with effect modification by a categorical variable. We compare this new method to a stratified analysis and to a model that includes the categorical modifier directly in the BKMR kernel function in both a simulation study and the analysis of a metals mixture on children’s neurodevelopment with child sex as a binary modifier in a rural Bangladesh cohort. Both stratified BKMR and the new group-separable BKMR have the flexibility to capture interactions and estimate between-group differences. The group-separable BKMR has lower variance compared to stratified BKMR, particularly when there are small subgroup sizes. We provide code and data to implement the methods and reproduce simulations and analyses.</p>
+<p><strong>Citation:</strong> Danielle Demateis and Kayleigh P Keller and Brent A Coull and Ander Wilson (In press). Subgroup Analyses and Effect Modification with Bayesian Kernel Machine Regression. <em>American Journal of Epidemiology</em>. <a href="https://doi.org/10.1093/aje/kwaf281">DOI:10.1093/aje/kwaf281</a></p>
+<p><strong>Software and data sharing:</strong></p>
+<p>This paper uses the R package <code>bkmrGS</code> v0.1.0 is in the GitHub repository <a href="https://github.com/ddemateis/bkmrGS">https://github.com/ddemateis/bkmrGS</a> (<a href="https://doi.org/10.5281/zenodo.18157172">DOI:10.5281/zenodo.18157172</a>). Code to reproduce the data analyses and simulations and information of data access is available at <a href="https://github.com/ddemateis/bkmr_simulations">https://github.com/ddemateis/bkmr_simulations</a> (<a href="https://doi.org/10.5281/zenodo.18163776">DOI:10.5281/zenodo.18163776</a>). The data is origionally from the previously published source Liu et al.&nbsp;2021 (<a href="https://doi.org/10.1080/01621459.2021.1962889">DOI:10.1080/01621459.2021.1962889</a>).</p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-2">
-<div class="g-col-1" data-index="0" data-categories="U3RhdCUyME1ldGhvZHMlMjBQYXBlciUyQ1NvZnR3YXJl" data-listing-date-sort="1765954800000" data-listing-file-modified-sort="1767710565268" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="276">
-<a href="./posts/gsbkmr.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Subgroup Analyses and Effect Modification with Bayesian Kernel Machine Regression
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('U3RhdCUyME1ldGhvZHMlMjBQYXBlcg=='); return false;">
-Stat Methods Paper
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('U29mdHdhcmU='); return false;">
-Software
-</div>
-</div>
-<div class="card-text listing-description">
-<strong>Abstract:</strong> There is substantial interest in estimating the health effects of exposure to environmental mixtures. Bayesian kernel machine regression (BKMR) has emerged as a…
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-December 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="U29mdHdhcmUlMjBQYXBlciUyQ1IlMjBQYWNrYWdlJTIwb24lMjBDUkFOJTJDU29mdHdhcmU=" data-listing-date-sort="1746684000000" data-listing-file-modified-sort="1758113532865" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="213">
-<a href="./posts/dlmtreepaper.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Structured Bayesian Regression Tree Models for Estimating Distributed Lag Effects: The R Package dlmtree
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('U29mdHdhcmUlMjBQYXBlcg=='); return false;">
-Software Paper
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('UiUyMFBhY2thZ2UlMjBvbiUyMENSQU4='); return false;">
-R Package on CRAN
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('U29mdHdhcmU='); return false;">
-Software
-</div>
-</div>
-<div class="card-text listing-description">
-<strong>Abstract:</strong> When examining the relationship between an exposure and an outcome, there is often a time lag between exposure and the observed effect on the outcome. A common…
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-May 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="U3RhdCUyME1ldGhvZHMlMjBQYXBlciUyQ1NvZnR3YXJl" data-listing-date-sort="1746424800000" data-listing-file-modified-sort="1755118593417" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="230">
-<a href="./posts/dlimIM.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Distributed Lag Interaction Model with Index Modification
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('U3RhdCUyME1ldGhvZHMlMjBQYXBlcg=='); return false;">
-Stat Methods Paper
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('U29mdHdhcmU='); return false;">
-Software
-</div>
-</div>
-<div class="card-text listing-description">
-<strong>Abstract:</strong> Epidemiological evidence supports an association between exposure to air pollution during pregnancy and birth and child health outcomes. Typically, such…
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-May 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="UiUyMFBhY2thZ2UlMjBvbiUyMENSQU4lMkNTb2Z0d2FyZQ==" data-listing-date-sort="1745560800000" data-listing-file-modified-sort="1755118595001" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="113">
-<a href="./posts/dlmtreepackage.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-dlmtree: Bayesian Treed Distributed Lag Models
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('UiUyMFBhY2thZ2UlMjBvbiUyMENSQU4='); return false;">
-R Package on CRAN
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('U29mdHdhcmU='); return false;">
-Software
-</div>
-</div>
-<div class="card-text listing-description">
-<strong>Description:</strong> Estimation of distributed lag models (DLMs) based on a Bayesian additive regression trees framework. Includes several extensions of DLMs: treed DLMs and…
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-April 2025
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="U3RhdCUyME1ldGhvZHMlMjBQYXBlcg==" data-listing-date-sort="1126936800000" data-listing-file-modified-sort="1758113811966" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="258">
-<a href="./posts/collapsedKMR.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Collapsible Kernel Machine Regression for Exposomic Analyses
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('U3RhdCUyME1ldGhvZHMlMjBQYXBlcg=='); return false;">
-Stat Methods Paper
-</div>
-</div>
-<div class="card-text listing-description">
-<strong>Abstract:</strong> An important goal of environmental epidemiology is to quantify the complex health risks posed by a wide array of environmental exposures. In analyses focusing on a…
-</div>
-<div class="card-attribution card-text-small end">
-<div class="listing-date">
-September 2005
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

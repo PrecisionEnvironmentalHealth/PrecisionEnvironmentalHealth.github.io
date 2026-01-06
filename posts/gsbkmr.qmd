@@ -1,0 +1,24 @@
+---
+title: "Subgroup Analyses and Effect Modification with Bayesian Kernel Machine Regression"
+date: 12/17/2025
+categories: 
+  - Stat Methods Paper
+  - Software
+---
+
+
+
+**Abstract:** There is substantial interest in estimating the health effects of exposure to environmental mixtures. Bayesian kernel machine regression (BKMR) has emerged as a popular tool for mixture analyses. The health effects of environmental exposures, including mixture exposures, often differ among subpopulations. However, there is little guidance on how to assess such heterogeneity for mixture effects. We provide tools and guidance to conduct BKMR analyses with effect modification, including estimating group-specific effects and between-group differences in effects. We propose a new group-separable BKMR variant for mixture analyses with effect modification by a categorical variable. We compare this new method to a stratified analysis and to a model that includes the categorical modifier directly in the BKMR kernel function in both a simulation study and the analysis of a metals mixture on children’s neurodevelopment with child sex as a binary modifier in a rural Bangladesh cohort. Both stratified BKMR and the new group-separable BKMR have the flexibility to capture interactions and estimate between-group differences. The group-separable BKMR has lower variance compared to stratified BKMR, particularly when there are small subgroup sizes. We provide code and data to implement the methods and reproduce simulations and analyses.
+
+
+**Citation:** Danielle Demateis and Kayleigh P Keller and Brent A Coull and Ander Wilson (In press). Subgroup Analyses and Effect Modification with Bayesian Kernel Machine Regression.  _American Journal of Epidemiology_. [DOI:10.1093/aje/kwaf281 ](https://doi.org/10.1093/aje/kwaf281)
+
+
+**Software and data sharing:** 
+
+This paper uses the R package `bkmrGS` v0.1.0 is in the GitHub repository [https://github.com/ddemateis/bkmrGS](https://github.com/ddemateis/bkmrGS) ([DOI:10.5281/zenodo.18157172](https://doi.org/10.5281/zenodo.18157172)). Code to reproduce the data analyses and simulations and information of data access is available at [https://github.com/ddemateis/bkmr_simulations](https://github.com/ddemateis/bkmr_simulations) ([DOI:10.5281/zenodo.18163776](https://doi.org/10.5281/zenodo.18163776)). The data is origionally from the previously published source Liu et al. 2021 ([DOI:10.1080/01621459.2021.1962889](https://doi.org/10.1080/01621459.2021.1962889)).
+
+
+
+
+
